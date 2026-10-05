@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Legal Services | Sri Swastik Charities</title>
+<meta name="description" content="Illustrative legal services offered by Sri Swastik Charities, from civil litigation to cyber law and legal documentation.">
+<meta name="theme-color" content="#116CB3">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&display=swap" rel="stylesheet">
+<style>
+:root{--blue:#116CB3;--blued:#0B4F87;--red:#E5242B;--redd:#C41B21;--black:#0A0A0A;--ink:#1B2430;--tint:#EEF5FB;--tintr:#FDEFEF;--line:#DCE6F0;--white:#fff;--sans:'Montserrat','Segoe UI',Helvetica,Arial,sans-serif;--side:292px;--gutter:clamp(22px,8vw,150px)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--sans);color:var(--ink);background:#fff;line-height:1.7;font-size:16px;overflow-x:hidden}
+img,svg{max-width:100%}a{color:inherit;text-decoration:none}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,label:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+h1,h2,h3,h4{font-family:var(--sans);font-weight:800;line-height:1.15;color:var(--ink);letter-spacing:-.01em}
+.ico{width:1em;height:1em;display:block}
+.skip{position:absolute;left:-999px;top:0;background:var(--red);color:#fff;padding:10px 16px;z-index:300}.skip:focus{left:8px;top:8px}
+.stripe{height:10px;background:repeating-linear-gradient(90deg,var(--blue) 0 40px,var(--red) 40px 80px)}
+
+/* sidebar */
+header.side{position:fixed;left:0;top:0;bottom:0;width:var(--side);background:#fff;border-right:1px solid var(--line);display:flex;flex-direction:column;padding:34px 26px 26px;z-index:100;overflow-y:auto}
+.brand{display:flex;align-items:center;gap:14px;margin-bottom:38px}
+.mark{width:58px;height:58px;flex-shrink:0;position:relative;background:repeating-linear-gradient(90deg,var(--blue) 0 4px,#fff 4px 8px) top/100% 50% no-repeat,repeating-linear-gradient(90deg,var(--red) 0 4px,#fff 4px 8px) bottom/100% 50% no-repeat}
+.mark i{position:absolute;inset:14px;background:var(--black);border-radius:50%;color:#fff;font-style:normal;font-weight:800;display:grid;place-items:center;font-size:1.05rem}
+.bt{display:flex;flex-direction:column;line-height:1.1}
+.bt strong{font-size:1.15rem;font-weight:800;color:var(--blue);letter-spacing:.01em}
+.bt b{font-size:.82rem;font-weight:700;color:var(--red);letter-spacing:.04em}
+.bt em{font-size:.62rem;font-style:italic;color:var(--blued);margin-top:4px;letter-spacing:.04em}
+nav.main ul{list-style:none;display:flex;flex-direction:column;gap:4px}
+nav.main a{display:flex;align-items:center;gap:12px;padding:13px 16px;font-size:.78rem;font-weight:700;letter-spacing:.12em;color:var(--ink);border-left:4px solid transparent;transition:background .25s,border-color .25s,color .25s,padding .25s}
+nav.main a:hover{background:var(--tint);border-left-color:var(--blue);padding-left:22px}
+nav.main a[aria-current="page"]{background:var(--tint);border-left-color:var(--red);color:var(--blue)}
+.side-foot{margin-top:auto;padding-top:28px;font-size:.78rem;color:#55657a}
+.side-foot strong{display:block;color:var(--ink);font-size:.7rem;letter-spacing:.14em;margin-bottom:6px}
+.side-foot .pill{display:inline-block;margin-top:12px;background:var(--tintr);color:var(--redd);font-weight:700;font-size:.66rem;letter-spacing:.12em;padding:5px 10px}
+#menu-toggle{position:absolute;opacity:0;pointer-events:none}
+.burger{display:none;cursor:pointer;width:46px;height:46px;background:var(--blue);align-items:center;justify-content:center;flex-direction:column;gap:5px}
+.burger span{display:block;width:22px;height:2px;background:#fff;transition:transform .3s,opacity .3s}
+#menu-toggle:focus-visible + .burger{outline:3px solid var(--red);outline-offset:3px}
+#menu-toggle:checked + .burger span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+#menu-toggle:checked + .burger span:nth-child(2){opacity:0}
+#menu-toggle:checked + .burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+.content{margin-left:var(--side);min-width:0}
+.pad{padding:0 var(--gutter)}
+.sec{padding:88px 0}
+.sec.tint{background:var(--tint)}
+.k{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--red);margin-bottom:14px}
+.h2{font-size:clamp(1.9rem,3.4vw,2.8rem);margin-bottom:16px}
+.h2 span{color:var(--blue)}
+.lead{color:#475569;max-width:640px}
+.sec-head{margin-bottom:48px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 30px;font-family:var(--sans);font-size:.76rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;border:2px solid;cursor:pointer;border-radius:4px;transition:background .25s,color .25s,transform .25s,box-shadow .25s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 12px 22px rgba(17,108,179,.25)}
+.btn.blue{background:var(--blue);border-color:var(--blue);color:#fff}.btn.blue:hover{background:var(--blued);border-color:var(--blued)}
+.btn.red{background:var(--red);border-color:var(--red);color:#fff}.btn.red:hover{background:var(--redd);border-color:var(--redd);box-shadow:0 12px 22px rgba(229,36,43,.28)}
+.btn.line{background:#fff;border-color:var(--blue);color:var(--blue)}.btn.line:hover{background:var(--blue);color:#fff}
+.btn.white{background:#fff;border-color:#fff;color:var(--redd)}.btn.white:hover{background:var(--black);border-color:var(--black);color:#fff}
+.btns{display:flex;gap:14px;flex-wrap:wrap}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center;padding-top:72px;padding-bottom:72px;min-height:calc(100vh - 10px)}
+.hero h1{font-size:clamp(2.4rem,5vw,4.3rem);text-transform:uppercase;margin-bottom:22px;animation:rise .9s ease both}
+.hero h1 .b{color:var(--blue)}.hero h1 .r{color:var(--red)}
+.hero p.lead{font-size:1.1rem;margin-bottom:34px;animation:rise 1.1s ease both}
+.hero .btns{animation:rise 1.3s ease both}
+.art{position:relative;aspect-ratio:1;width:100%;max-width:440px;margin-left:auto;background-image:repeating-linear-gradient(90deg,var(--blue) 0 11px,transparent 11px 22px),repeating-linear-gradient(0deg,var(--red) 0 11px,transparent 11px 22px),repeating-linear-gradient(0deg,var(--red) 0 11px,transparent 11px 22px),repeating-linear-gradient(90deg,var(--blue) 0 11px,transparent 11px 22px);background-size:50% 50%;background-repeat:no-repeat;background-position:0 0,100% 0,0 100%,100% 100%;animation:fade 1.4s ease both}
+.art .disc{position:absolute;inset:27%;background:var(--black);border-radius:50%;display:grid;place-items:center;color:#fff;box-shadow:0 0 0 12px #fff;transition:transform .8s ease}
+.art:hover .disc{transform:rotate(-6deg) scale(1.05)}
+.art .disc svg{width:56%;height:auto}
+.art-cap{margin-top:22px;text-align:right;font-size:.7rem;letter-spacing:.3em;font-weight:700;color:var(--blued)}
+
+/* intro band */
+.intro{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.intro p{margin-bottom:16px;color:#475569}
+.quote{background:var(--blue);color:#fff;padding:48px 42px;position:relative;border-radius:4px;overflow:hidden}
+.quote::after{content:"";position:absolute;right:0;bottom:0;width:90px;height:90px;background:repeating-linear-gradient(135deg,var(--red) 0 8px,transparent 8px 16px)}
+.quote blockquote{font-size:1.45rem;font-weight:700;line-height:1.4;position:relative;z-index:1}
+.quote cite{display:block;margin-top:18px;font-size:.7rem;letter-spacing:.2em;font-style:normal;text-transform:uppercase;color:#cfe4f6;position:relative;z-index:1}
+
+/* rows (approach) */
+.rows{border-top:2px solid var(--ink)}
+.rowi{display:grid;grid-template-columns:90px 260px 1fr;gap:24px;align-items:baseline;padding:28px 12px;border-bottom:1px solid var(--line);transition:background .3s,padding .3s}
+.rowi:hover{background:#fff;padding-left:26px}
+.rowi .n{font-size:2rem;font-weight:800;color:var(--red)}
+.rowi h3{font-size:1.4rem;color:var(--blue)}
+.rowi p{color:#475569}
+
+/* cards */
+.grid{display:grid;gap:24px}.g3{grid-template-columns:repeat(3,1fr)}.g2{grid-template-columns:repeat(2,1fr)}
+.card{background:#fff;border:1px solid var(--line);padding:34px 28px 30px;position:relative;border-radius:4px;transition:transform .3s,box-shadow .3s}
+.card::before{content:"";position:absolute;left:0;top:0;right:0;height:5px;background:var(--blue);transition:height .3s}
+.card:nth-child(even)::before{background:var(--red)}
+.card:hover{transform:translateY(-8px);box-shadow:0 22px 40px rgba(11,79,135,.15)}.card:hover::before{height:9px}
+.sq{width:56px;height:56px;display:grid;place-items:center;font-size:1.6rem;background:var(--tint);color:var(--blue);border-radius:4px;transition:background .3s,color .3s;flex-shrink:0}
+.card:nth-child(even) .sq{background:var(--tintr);color:var(--red)}
+.card:hover .sq{background:var(--blue);color:#fff}.card:nth-child(even):hover .sq{background:var(--red);color:#fff}
+.card h3{font-size:1.2rem;margin:18px 0 8px}
+.card p{font-size:.92rem;color:#475569}
+
+/* forums */
+.band{background:var(--blue);color:#fff}
+.band .h2,.band h3{color:#fff}.band .k{color:#fff;opacity:.85}.band .lead{color:#d6e8f7}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid rgba(255,255,255,.3);border-left:1px solid rgba(255,255,255,.3)}
+.tile{padding:30px 26px;display:flex;align-items:center;gap:18px;border-right:1px solid rgba(255,255,255,.3);border-bottom:1px solid rgba(255,255,255,.3);transition:background .3s}
+.tile:hover{background:var(--blued)}
+.tile .ico{font-size:2rem;flex-shrink:0}
+.tile h3{font-size:1.02rem;font-weight:700}
+.note{margin-top:26px;font-size:.88rem;font-style:italic;padding:14px 20px;border-left:4px solid var(--red);background:rgba(255,255,255,.12)}
+.note.l{background:var(--tintr);color:#444}
+
+/* cta */
+.cta{background:var(--red);color:#fff;padding:84px 0;position:relative;overflow:hidden}
+.cta::before{content:"";position:absolute;right:-60px;top:-60px;width:300px;height:300px;background:repeating-linear-gradient(45deg,rgba(255,255,255,.18) 0 10px,transparent 10px 20px);border-radius:50%}
+.cta .in{position:relative;display:flex;justify-content:space-between;align-items:center;gap:32px;flex-wrap:wrap}
+.cta h2{color:#fff;font-size:clamp(1.8rem,3.6vw,2.7rem);max-width:640px}
+
+/* page head */
+.ph{padding-top:72px;padding-bottom:60px;border-bottom:1px solid var(--line);background:linear-gradient(90deg,var(--tint) 0,#fff 70%);position:relative}
+.ph::before{content:"";position:absolute;left:0;top:0;bottom:0;width:10px;background:linear-gradient(var(--blue) 50%,var(--red) 50%)}
+.ph h1{font-size:clamp(2.1rem,5vw,3.8rem);text-transform:uppercase;color:var(--blue);animation:rise .9s ease both}
+.ph h1 b{color:var(--red);font-weight:800}
+.ph p{max-width:640px;margin-top:14px;color:#475569}
+.crumbs{font-size:.7rem;letter-spacing:.18em;font-weight:700;text-transform:uppercase;color:var(--red);margin-bottom:14px}
+
+/* about */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.two p{margin-bottom:16px;color:#475569}
+.facts{border:2px solid var(--blue);padding:36px 32px;border-radius:4px;background:#fff}
+.facts h3{color:var(--red);font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;margin-bottom:6px}
+.facts dt{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:#8a97a8;font-weight:700;margin-top:16px}
+.facts dd{font-weight:700;font-size:1.1rem;color:var(--blue)}
+.mv{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.mvc{padding:46px 40px;border-radius:4px;color:#fff}
+.mvc.b{background:var(--blue)}.mvc.r{background:var(--red)}
+.mvc .ico{font-size:2.2rem;margin-bottom:16px}.mvc h2{color:#fff;font-size:1.8rem;margin-bottom:10px}.mvc p{color:#fff;opacity:.95}.mvc .k{color:#fff}
+.vals{display:grid;grid-template-columns:repeat(5,1fr);border:1px solid var(--line);background:#fff}
+.val{padding:30px 22px;border-right:1px solid var(--line);transition:background .3s}.val:last-child{border-right:0}
+.val:hover{background:var(--tint)}
+.val .n{font-size:.8rem;font-weight:800;color:var(--red);letter-spacing:.2em}
+.val h3{font-size:1.1rem;margin:8px 0;color:var(--blue)}.val p{font-size:.86rem;color:#475569}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);counter-reset:s}
+.step{position:relative;padding:0 24px 20px 0}
+.step::before{counter-increment:s;content:counter(s);display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--red);color:#fff;font-weight:800;margin-bottom:16px;position:relative;z-index:1}
+.step::after{content:"";position:absolute;top:21px;left:44px;right:0;height:2px;background:#c5d6e6}
+.step:last-child::after{display:none}
+.step h3{font-size:1.15rem;color:var(--blue);margin-bottom:6px}.step p{font-size:.9rem;color:#475569}
+
+/* team */
+.team{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.mem{display:grid;grid-template-columns:170px 1fr;border:1px solid var(--line);border-radius:4px;overflow:hidden;background:#fff;transition:transform .3s,box-shadow .3s}
+.mem:hover{transform:translateY(-6px);box-shadow:0 20px 40px rgba(11,79,135,.14)}
+.pic{background:var(--tint);display:grid;place-items:center;position:relative;color:var(--blue);min-height:200px}
+.mem:nth-child(even) .pic{background:var(--tintr);color:var(--red)}
+.pic::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--blue)}
+.mem:nth-child(even) .pic::before{background:var(--red)}
+.pic svg{width:56%}
+.pic span{position:absolute;bottom:10px;font-size:.55rem;letter-spacing:.18em;font-weight:700;text-transform:uppercase;color:#6b7a8c}
+.mb{padding:26px 26px 28px}.mb h2{font-size:1.35rem}
+.role{color:var(--red);font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;font-weight:800;margin:4px 0 10px}
+.areas{font-size:.8rem;color:var(--blue);font-weight:700;padding-bottom:10px;margin-bottom:10px;border-bottom:1px solid var(--line)}
+.mb p{font-size:.88rem;color:#475569}
+
+/* services page */
+.svc{display:grid;grid-template-columns:repeat(2,1fr);border-top:2px solid var(--ink)}
+.s{display:grid;grid-template-columns:64px 1fr;gap:20px;padding:30px 28px 30px 8px;border-bottom:1px solid var(--line);transition:background .3s}
+.s:nth-child(odd){border-right:1px solid var(--line);padding-right:34px}.s:nth-child(even){padding-left:34px}
+.s:hover{background:var(--tint)}
+.s:nth-child(4n+2) .sq,.s:nth-child(4n+3) .sq{background:var(--tintr);color:var(--red)}
+.s h2{font-size:1.2rem;margin-bottom:6px}.s p{font-size:.9rem;color:#475569}
+.s small{display:block;font-size:.64rem;letter-spacing:.2em;font-weight:700;color:#8a97a8;margin-bottom:4px}
+
+/* contact */
+.ct{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:start}
+form.enq{border:1px solid var(--line);padding:42px 38px;border-radius:4px;border-top:6px solid var(--blue);box-shadow:0 18px 40px rgba(11,79,135,.08)}
+form.enq h2{font-size:1.7rem}
+.fn{font-size:.82rem;color:#6b7a8c;font-style:italic;margin:6px 0 20px}
+.field{margin-bottom:18px}
+.field label{display:block;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--blue);margin-bottom:6px}
+.field input,.field textarea{width:100%;padding:14px 16px;border:2px solid var(--line);background:#fff;font:inherit;color:var(--ink);border-radius:4px;transition:border-color .25s}
+.field input:focus,.field textarea:focus{border-color:var(--blue);outline:3px solid rgba(17,108,179,.25)}
+.field textarea{min-height:140px;resize:vertical}
+.f2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.info{display:grid;gap:16px}
+.ic{display:flex;gap:18px;padding:22px 24px;border-radius:4px;background:var(--tint);border-left:6px solid var(--blue)}
+.ic:nth-child(even){background:var(--tintr);border-left-color:var(--red)}
+.ic .ico{font-size:1.6rem;color:var(--blue);flex-shrink:0;margin-top:3px}.ic:nth-child(even) .ico{color:var(--red)}
+.ic h3{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:#6b7a8c;margin-bottom:2px}
+.ic p{font-weight:600}
+.map{position:relative;min-height:340px;border:1px solid var(--line);border-radius:4px;background:repeating-linear-gradient(0deg,transparent 0 39px,#d3e2f0 39px 40px),repeating-linear-gradient(90deg,transparent 0 39px,#d3e2f0 39px 40px),var(--tint);display:grid;place-items:center;text-align:center;overflow:hidden}
+.map::before{content:"";position:absolute;left:-10%;right:-10%;top:50%;height:22px;background:#fff;transform:rotate(-7deg)}
+.map::after{content:"";position:absolute;top:-10%;bottom:-10%;left:62%;width:18px;background:#fff;transform:rotate(11deg)}
+.pin{position:relative;z-index:1;background:#fff;padding:24px 34px;border-radius:4px;border-bottom:5px solid var(--red);box-shadow:0 14px 30px rgba(11,79,135,.18);max-width:90%}
+.pin .ico{font-size:2rem;color:var(--red);margin:0 auto 6px}.pin strong{display:block;font-size:1.05rem}.pin span{font-size:.82rem;color:#6b7a8c}
+
+/* footer */
+footer.site{background:var(--black);color:#b6bfca;font-size:.9rem}
+footer.site::before{content:"";display:block;height:10px;background:repeating-linear-gradient(90deg,var(--blue) 0 40px,var(--red) 40px 80px)}
+.fg{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:40px;padding-top:60px;padding-bottom:44px}
+footer.site h4{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:#fff;margin-bottom:18px;padding-bottom:10px;border-bottom:2px solid var(--red);display:inline-block}
+footer.site ul{list-style:none}footer.site li{margin-bottom:9px}
+footer.site a:hover{color:#fff;text-decoration:underline}
+.fb strong{display:block;color:#fff;font-size:1.15rem;letter-spacing:.04em;margin-bottom:4px}
+.fb em{display:block;font-style:normal;color:#ff7378;font-size:.78rem;font-weight:600;letter-spacing:.1em;margin-bottom:14px}
+.fd{border-top:1px solid #222;padding:20px 0;font-size:.76rem;color:#8b96a3;line-height:1.6}
+.fbt{border-top:1px solid #222;padding:22px 0;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:.8rem}
+.fbt a{margin-left:20px}
+
+@keyframes rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@supports (animation-timeline:view()){.scroll-in{animation:rise linear backwards;animation-timeline:view();animation-range:entry 0% entry 35%}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+@media (max-width:1180px){.g3{grid-template-columns:1fr 1fr}.team{grid-template-columns:1fr}.vals{grid-template-columns:repeat(3,1fr)}.val{border-bottom:1px solid var(--line)}.tiles{grid-template-columns:1fr 1fr}.fg{grid-template-columns:1fr 1fr}.rowi{grid-template-columns:70px 200px 1fr}}
+@media (max-width:960px){
+  :root{--side:0px}
+  header.side{position:sticky;top:0;bottom:auto;width:100%;flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:space-between;padding:12px 20px;border-right:0;border-bottom:1px solid var(--line);overflow:visible}
+  .brand{margin:0}.bt em{display:none}.mark{width:46px;height:46px}.mark i{inset:11px;font-size:.85rem}
+  .burger{display:flex}
+  nav.main{flex-basis:100%;max-height:0;overflow:hidden;transition:max-height .4s ease}
+  #menu-toggle:checked ~ nav.main{max-height:420px}
+  nav.main ul{padding:12px 0 6px}
+  .side-foot{display:none}
+  .hero{grid-template-columns:1fr;min-height:0;padding-top:48px;padding-bottom:56px;gap:40px}
+  .art{margin:0 auto;max-width:320px}.art-cap{text-align:center}
+  .intro,.two,.mv,.ct{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr 1fr;row-gap:24px}.step::after{display:none}
+  .sec{padding:64px 0}
+}
+@media (max-width:700px){
+  :root{--gutter:20px}
+  .g3,.g2,.tiles,.fg,.vals,.steps,.svc,.f2{grid-template-columns:1fr}
+  .rowi{grid-template-columns:1fr;gap:4px;padding:22px 8px}
+  .mem{grid-template-columns:1fr}.pic{min-height:170px}
+  .s,.s:nth-child(odd),.s:nth-child(even){border-right:0;padding:26px 6px;grid-template-columns:56px 1fr}
+  .btn{width:100%;justify-content:center}
+  form.enq{padding:30px 22px}.quote{padding:36px 26px}.mvc{padding:36px 26px}
+  .val{border-right:0}
+  .cta .in{flex-direction:column;align-items:flex-start}
+  .fbt a{margin:0 16px 0 0}
+  .bt strong{font-size:1rem}
+}
+/* lighter shades */
+:root{--tint:#F1F7FC;--tintr:#FEF3F3}
+.band{background:#EAF3FB;color:var(--ink)}.band .h2,.band h3{color:var(--ink)}.band .k{color:var(--red);opacity:1}
+.tiles{border-color:#cfe0ef}.tile{background:#fff;border-color:#cfe0ef}.tile:hover{background:var(--tint)}.tile .ico{color:var(--blue)}.tile:nth-child(even) .ico{color:var(--red)}
+.note{background:var(--tintr);color:#444}
+.cta{background:linear-gradient(100deg,#FEF3F3,#EAF3FB);color:var(--ink);border-top:1px solid #dce6f0;border-bottom:1px solid #dce6f0}
+.cta::before{background:repeating-linear-gradient(45deg,rgba(17,108,179,.12) 0 10px,transparent 10px 20px)}.cta h2{color:var(--ink)}
+.btn.white{background:var(--red);border-color:var(--red);color:#fff}.btn.white:hover{background:var(--redd);border-color:var(--redd);color:#fff}
+.quote{background:#EAF3FB;color:var(--ink);border:1px solid #cfe0ef;border-top:6px solid var(--blue)}.quote cite{color:var(--blued)}
+.mvc.b{background:#EAF3FB;color:var(--ink);border-top:6px solid var(--blue)}.mvc.r{background:#FEF3F3;color:var(--ink);border-top:6px solid var(--red)}
+.mvc h2{color:var(--ink)}.mvc p{color:#475569;opacity:1}.mvc .k{color:var(--red)}.mvc.b .ico{color:var(--blue)}.mvc.r .ico{color:var(--red)}
+footer.site{background:#F1F6FB;color:#475569}footer.site h4{color:var(--ink)}.fb strong{color:var(--blue)}.fb em{color:var(--red)}footer.site a:hover{color:var(--blue)}
+.fd,.fbt{border-top-color:#dce6f0}.fd{color:#6b7a8c}
+.art .disc{background:#fff;color:var(--blue);box-shadow:0 0 0 12px #fff,0 12px 30px rgba(17,108,179,.22)}
+.mark i{background:var(--blued)}
+
+/* desktop: top navigation */
+@media (min-width:961px){
+  :root{--side:0px}
+  header.side{position:sticky;top:0;bottom:auto;width:100%;flex-direction:row;align-items:center;justify-content:space-between;padding:12px var(--gutter);border-right:0;border-bottom:1px solid var(--line);overflow:visible;box-shadow:0 4px 18px rgba(17,108,179,.07)}
+  .brand{margin:0}
+  nav.main ul{flex-direction:row;gap:2px}
+  nav.main a{border-left:0;border-bottom:4px solid transparent;padding:16px 16px 12px;font-size:.74rem}
+  nav.main a:hover{background:var(--tint);border-bottom-color:var(--blue);padding-left:16px}
+  nav.main a[aria-current="page"]{background:transparent;border-bottom-color:var(--red);color:var(--blue)}
+  .side-foot{display:none}
+  .hero{min-height:calc(100vh - 110px)}
+}
+@media (min-width:961px) and (max-width:1200px){nav.main a{padding:16px 9px 12px;letter-spacing:.06em;font-size:.7rem}.bt strong{font-size:1rem}}
+
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs><symbol id="i-scales" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M5 21h14M5 7h14M5 7l-3 7a3 3 0 0 0 6 0zM19 7l-3 7a3 3 0 0 0 6 0z"/></symbol><symbol id="i-gavel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4l7 7M9 8l7 7M4 21l8-8M3 21h9M11 5l4-3 7 7-3 4"/></symbol><symbol id="i-family" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="7" r="3"/><circle cx="17" cy="8" r="2.5"/><path d="M3 20c0-4 3-6 5-6s5 2 5 6M14 20c0-3 2-5 4-5s3 2 3 5"/></symbol><symbol id="i-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8M5 10v11h14V10M10 21v-6h4v6"/></symbol><symbol id="i-building" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V5l8-2 8 2v16M9 9h2M13 9h2M9 13h2M13 13h2M10 21v-4h4v4"/></symbol><symbol id="i-doc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h9l4 4v14H6zM14 3v5h5M9 13h7M9 17h7"/></symbol><symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-4 8-8 9-4-1-8-4-8-9V6zM9 12l2 2 4-4"/></symbol><symbol id="i-briefcase" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h18v12H3zM9 8V5h6v3M3 13h18"/></symbol><symbol id="i-arrows" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M8 8l-4 4 4 4M16 8l4 4-4 4"/></symbol><symbol id="i-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 11h12v10H6zM8 11V7a4 4 0 0 1 8 0v4M12 15v2"/></symbol><symbol id="i-bank" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-6 9 6M5 9v9M9 9v9M15 9v9M19 9v9M3 21h18M2 9h20"/></symbol><symbol id="i-pen" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l1-4L16 5l3 3L8 19zM14 7l3 3"/></symbol><symbol id="i-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol><symbol id="i-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></symbol><symbol id="i-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-5 4-7 8-7s8 2 8 7"/></symbol><symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></symbol><symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></symbol><symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5h18v14H3zM3 6l9 7 9-7"/></symbol><symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol></defs></svg>
+
+<a class="skip" href="#main">Skip to main content</a>
+<header class="side">
+  <a class="brand" href="index.html" aria-label="Sri Swastik Charities home"><span class="mark" aria-hidden="true"><i>S</i></span><span class="bt"><strong>SRI SWASTIK</strong><b>CHARITIES</b><em>Legal Advisory</em></span></a>
+  <input type="checkbox" id="menu-toggle" aria-label="Toggle navigation menu">
+  <label class="burger" for="menu-toggle" aria-hidden="true"><span></span><span></span><span></span></label>
+  <nav class="main" aria-label="Main navigation"><ul><li><a href="index.html">HOME</a></li><li><a href="about.html">ABOUT</a></li><li><a href="team.html">TEAM MEMBERS</a></li><li><a href="services.html" aria-current="page">SERVICES</a></li><li><a href="contact.html">CONTACT US</a></li></ul></nav>
+  <div class="side-foot"><strong>CHENNAI, TAMIL NADU</strong>Mon &ndash; Sat<br>9:00 AM &ndash; 6:00 PM<br><span class="pill">DEMO WEBSITE</span></div>
+</header>
+<div class="content">
+<main id="main">
+
+<section class="ph pad" aria-labelledby="pg-h"><div class="crumbs"><a href="index.html">Home</a> / Services</div><h1 id="pg-h">OUR LEGAL <b>SERVICES</b></h1><p>Twelve illustrative practice areas, presented as a sample of how the final services page will read.</p></section>
+<section class="sec" aria-label="Legal services"><div class="pad">
+  <div class="svc"><article class="s scroll-in"><div class="sq"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-scales"/></svg></div><div><small>PRACTICE AREA 01</small><h2>Civil Litigation</h2><p>Guidance on civil disputes, suits, injunctions and recovery matters, with careful preparation at every stage of the process.</p></div></article><article class="s scroll-in"><div class="sq"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-gavel"/></svg></div><div><small>PRACTICE AREA 02</small><h2>Criminal Law</h2><p>Advisory support on criminal procedure, bail and defence strategy, handled with discretion and respect for due process.</p></div></article><article class="s scroll-in"><div class="sq"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-family"/></svg></div><div><small>PRACTICE AREA 03</small><h2>Family &amp; Matrimonial Law</h2><p>Sensitive counsel on marriage, divorce, custody, maintenance and succession matters.</p></div></article><article class="s scroll-in"><div class="sq"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-home"/></svg></div><div><small>PRACTICE AREA 04</small><h2>Property &amp; Real Estate Law</h2><p>Title verification, sale and lease documentation, and resolution of property disputes.</p></div></article><article class="s scroll-in"><div class="sq"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-building"/></svg></div><div><small>PRACTICE AREA 05</small><h2>Corporate &amp; Commercial Law</h2><p>Support for company formation, compliance, governance and day-to-day commercial legal needs.</p></div></article><article class="s scroll-in"><div class="sq"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-doc"/></svg></div><div><small>PRACTICE AREA 06</small><h2>Contract &amp; Agreement Matters</h2><p>Drafting, review and negotiation of agreements so that obligations and risks are clearly understood.</p></div></article><article class="s scroll-in"><div class="sq"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-shield"/></svg></div><div><small>PRACTICE AREA 07</small><h2>Consumer Protection</h2><p>Assistance with grievances regarding deficiency in service, defective goods and unfair trade practices.</p></div></article><article class="s scroll-in"><div class="sq"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-briefcase"/></svg></div><div><small>PRACTICE AREA 08</small><h2>Employment &amp; Labour Matters</h2><p>Advice on employment contracts, workplace policies, service disputes and labour compliance.</p></div></article><article class="s scroll-in"><div class="sq"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-arrows"/></svg></div><div><small>PRACTICE AREA 09</small><h2>Arbitration &amp; Dispute Resolution</h2><p>Mediation, conciliation and arbitration support as efficient alternatives to prolonged litigation.</p></div></article><article class="s scroll-in"><div class="sq"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-lock"/></svg></div><div><small>PRACTICE AREA 10</small><h2>Cyber Law</h2><p>Guidance on online fraud, data privacy, intellectual property in digital spaces and IT Act matters.</p></div></article><article class="s scroll-in"><div class="sq"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-bank"/></svg></div><div><small>PRACTICE AREA 11</small><h2>Banking &amp; Financial Disputes</h2><p>Support on loan documentation, recovery proceedings, securitisation and financial-sector disputes.</p></div></article><article class="s scroll-in"><div class="sq"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-pen"/></svg></div><div><small>PRACTICE AREA 12</small><h2>Legal Documentation</h2><p>Preparation of notices, affidavits, wills, powers of attorney and other essential legal documents.</p></div></article></div>
+</div></section>
+<section class="sec band" aria-labelledby="lf-h"><div class="pad">
+  <div class="sec-head"><span class="k">Forums</span><h2 class="h2" id="lf-h">LEGAL FORUMS</h2></div>
+  <div class="tiles"><div class="tile"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-building"/></svg><h3>Supreme Court of India</h3></div><div class="tile"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-bank"/></svg><h3>High Court of Madras</h3></div><div class="tile"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-scales"/></svg><h3>District Courts</h3></div><div class="tile"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-shield"/></svg><h3>Consumer Forums</h3></div><div class="tile"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-gavel"/></svg><h3>Tribunals</h3></div></div>
+  <p class="note">Illustrative practice areas and forums &mdash; to be customized based on the client&rsquo;s actual legal practice.</p>
+</div></section>
+
+<section class="cta" aria-labelledby="cta-h"><div class="pad"><div class="in"><h2 id="cta-h">Clarity in Law. Confidence in Every Step.</h2><a class="btn white" href="contact.html">CONTACT US</a></div></div></section>
+</main>
+
+<footer class="site">
+  <div class="pad">
+    <div class="fg">
+      <div class="fb"><strong>SRI SWASTIK CHARITIES</strong><em>Professional. Ethical. Client-focused.</em><p>A demonstration website for an Indian legal organization. All content is placeholder material to be replaced with verified client information.</p></div>
+      <div><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="team.html">Team Members</a></li><li><a href="services.html">Services</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
+      <div><h4>Practice Areas</h4><ul><li><a href="services.html">Civil Litigation</a></li><li><a href="services.html">Criminal Law</a></li><li><a href="services.html">Family &amp; Matrimonial</a></li><li><a href="services.html">Property &amp; Real Estate</a></li><li><a href="services.html">Corporate &amp; Commercial</a></li></ul></div>
+      <div><h4>Contact Details</h4><ul><li>Chennai, Tamil Nadu, India</li><li>+91 XXXXX XXXXX</li><li>contact@example.com</li><li>Mon &ndash; Sat, 9:00 AM &ndash; 6:00 PM</li></ul></div>
+    </div>
+    <div class="fd"><strong>Disclaimer:</strong> The Bar Council of India does not permit advertising or solicitation by advocates. Information on this website is for general informational purposes only, is not legal advice, and does not create an advocate-client relationship. This is a demonstration site; names and details are fictional placeholders.</div>
+    <div class="fbt"><div>&copy; 2026 Sri Swastik Charities. All Rights Reserved.</div><nav aria-label="Footer legal links"><a href="disclaimer.html">Disclaimer</a><a href="contact.html">Privacy Policy</a></nav></div>
+  </div>
+</footer>
+</div>
+</body>
+</html>
